@@ -167,7 +167,7 @@ if resultado is not None:
     plt.plot(xs, lru_vals, '-x', color='blue', label='LRU')
     plt.xlabel("Número de quadros de RAM")
     plt.ylabel("Faltas de página")
-    plt.title("Comparativo: string de referência (sem páginas iniciais)")
+    plt.title("Comparativo de page faults")
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.legend()
     plt.show()
