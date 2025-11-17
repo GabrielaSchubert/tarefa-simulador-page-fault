@@ -3,9 +3,13 @@
 Construa um simulador de algoritmos de substituição de páginas (capitulo 17). O simulador deve receber como entrada o tamanho da RAM (em quadros) e a sequência de referências a páginas de memória e gerar como saída o número de faltas de página geradas, para os algoritmos OPT, FIFO e LRU. Usar linguagem python.
 
 Atencao: trabalho individual, trabalhos iguais serao considerados cola e receberao nota zero.
+
+OBS: caso deseje ver o gráfico rode o código no google colab ou com matplotlib instalado.
+
 """
 
 from collections import deque
+import matplotlib.pyplot as plt
 
 def fifo_trace(paginas, quadros, verbose=False):
     memoria = deque()
@@ -144,7 +148,6 @@ resultado = main()
 
 
 # GRÁFICO
-import matplotlib.pyplot as plt
 
 if resultado is not None:
     seq = resultado['seq']
